@@ -67,8 +67,8 @@ const SignUpPage = () => {
             )}
             {errors.password && errors.password.type === "pattern" && (
               <p className="errorMessage">
-                영문자, 숫자, 특수문자를 하나 이상 포함한 8자리 이상, 16자리
-                이하의 비밀번호여야 합니다.
+                영문자, 숫자, 특수문자를 하나 이상 포함한
+                <br /> 8자리 이상, 16자리 이하의 비밀번호여야 합니다.
               </p>
             )}
           </div>
