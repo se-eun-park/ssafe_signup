@@ -14,7 +14,9 @@ const SignUpPage = () => {
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#])[\da-zA-Z!@#]{8,16}$/;
 
-  const onSubmit = (data) => console.log(data.required);
+  const onSubmit = (data) => {
+    alert(`Email : ${data.email} \nPW : ${data.password}`);
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
