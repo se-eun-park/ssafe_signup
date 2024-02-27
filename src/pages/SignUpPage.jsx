@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const SignUpPage = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     formState: { errors },
@@ -16,6 +19,7 @@ const SignUpPage = () => {
 
   const onSubmit = (data) => {
     alert(`Email : ${data.email} \nPW : ${data.password}`);
+    navigate("/");
   };
 
   return (
