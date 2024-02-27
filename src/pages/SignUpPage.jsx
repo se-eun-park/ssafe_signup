@@ -25,7 +25,7 @@ const SignUpPage = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex w-full h-screen justify-center items-center">
+      <div className="flex w-full h-full justify-center items-center">
         <div className="flex flex-col w-[400px] h-[508px] justify-around">
           <div className="flex flex-col">
             <label className="labelText" htmlFor="email">
@@ -34,7 +34,7 @@ const SignUpPage = () => {
             <input
               className="inputField"
               id="email"
-              type="text"
+              type="email"
               placeholder="Email"
               {...register("email", {
                 required: true,

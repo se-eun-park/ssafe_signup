@@ -5,7 +5,7 @@ import SignUpButton from "../components/SignUpButton";
 const HomePage = () => {
   return (
     <div className="flex w-full h-screen justify-center items-center">
-      <Link to="signup">
+      <Link to="/signup">
         <SignUpButton />
       </Link>
     </div>
